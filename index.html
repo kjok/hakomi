@@ -1,1 +1,26 @@
-My Page
+<!DOCTYPE html>
+<title>ハコミ セラピー</title>
+<meta name="robots" content="noindex">
+<h1>ハコミ セラピー<br>
+<small>Hakomi of Japan</small></h1>
+<p>2011 年から、以下の 2 つの組織が発足し、それぞれが 独立した形でハコミ セラピーに関する活動を行っています。</p>
+<div id="displayLinks" style="text-align: center"></div>
+<div style="display: none">
+    <div id="show0">
+        <a href="http://hakomi-jhen.com/" target="_blank">日本ハコミ エデュケーション ネットワーク (JHEN)</a> |
+        <a href="http://www.hakomijapan.info/" target="_blank">日本ハコミ研究所 (HIJ)</a>
+    </div>
+    <div id="show1">
+        <a href="http://www.hakomijapan.info/" target="_blank">日本ハコミ研究所 (HIJ)</a> |
+        <a href="http://hakomi-jhen.com/" target="_blank">日本ハコミ エデュケーション ネットワーク (JHEN)</a>
+    </div>
+</div>
+<script language="JavaScript">
+var displayFlag = Math.floor(Math.random() * 2);
+var displayPlace = document.getElementById("displayLinks");
+var display0 = document.getElementById("show0");
+var display1 = document.getElementById("show1");
+displayFlag ? displayPlace.appendChild(display1) : displayPlace.appendChild(display0);
+</script>
+
+</html>
